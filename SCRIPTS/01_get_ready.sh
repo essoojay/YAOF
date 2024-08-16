@@ -45,6 +45,7 @@ lucidaednext_repo="https://github.com/QiuSimons/luci-app-daed-next"
 sbwfw876_repo="https://github.com/sbwml/openwrt_helloworld"
 sbw_pkg_repo="https://github.com/sbwml/openwrt_pkgs"
 natmap_repo="https://github.com/blueberry-pie-11/luci-app-natmap"
+kiddin9_repo="https://github.com/kiddin9/openwrt-packages.git"
 
 # 开始克隆仓库，并行执行
 clone_repo $openwrt_repo $latest_release openwrt &
@@ -86,6 +87,7 @@ clone_repo $lucidaednext_repo rebase lucidaednext &
 clone_repo $sbwfw876_repo v5 sbwfw876 &
 clone_repo $sbw_pkg_repo main sbw_pkg &
 clone_repo $natmap_repo master natmap &
+clone_repo $kiddin9_repo master kiddin9 &
 
 # 等待所有后台任务完成
 wait
